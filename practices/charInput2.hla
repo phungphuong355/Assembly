@@ -10,15 +10,15 @@ var
 begin intInput;
     // Read integers of varying sizes from the user:
     stdout.put("Enter a small integer between -128 and +127: ");
-    stdin.geti8();
+    stdin.geti8(); // save into al variable
     mov(al, i8);
 
     stdout.put("Enter a small integer between -32768 and +32767: ");
-    stdin.geti16();
+    stdin.geti16(); // save into ax variable
     mov(ax, i16);
 
     stdout.put("Enter an integer between +/- 2 billion: ");
-    stdin.geti32();
+    stdin.geti32(); // save into eax variable
     mov(eax, i32);
 
     // Display the input values.
